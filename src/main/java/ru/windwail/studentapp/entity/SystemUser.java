@@ -9,7 +9,7 @@ import java.util.Set;
 @Entity
 @Getter
 @Setter
-public class User {
+public class SystemUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "users_seq_gen")
@@ -31,6 +31,9 @@ public class User {
     @Column
     private String password;
 
-    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
-    private Set<Roles> roles;
+    @Column
+    private String login;
+
+    @OneToMany(mappedBy = "systemUser", fetch = FetchType.EAGER)
+    private Set<Role> roles;
 }

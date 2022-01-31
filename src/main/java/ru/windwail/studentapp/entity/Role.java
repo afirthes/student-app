@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
-public class Roles {
+public class Role {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "roles_seq_gen")
@@ -20,5 +20,5 @@ public class Roles {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private User user;
+    private SystemUser systemUser;
 }
