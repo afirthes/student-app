@@ -14,7 +14,7 @@ import ru.windwail.studentapp.repositories.UserRepository;
 import java.util.HashSet;
 import java.util.Set;
 
-@Service
+//@Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Autowired

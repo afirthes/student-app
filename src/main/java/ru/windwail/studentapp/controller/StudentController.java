@@ -33,5 +33,11 @@ public class StudentController {
         return modelAndView;
     }
 
+    @GetMapping(value = {"/contacts"})
+    public ModelAndView contacts() {
+        ModelAndView modelAndView = new ModelAndView("contacts");
+        return modelAndView;
+    }
+
 
 }

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import ru.windwail.studentapp.entity.SystemUser;
 import ru.windwail.studentapp.repositories.UserRepository;
 
-@Service
+//@Service
 public class UserService {
 
     @Autowired
